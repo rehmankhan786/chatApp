@@ -1,0 +1,191 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0px;
+}
+
+body::before {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background: url("./stars.jpg");
+  z-index: -1;
+}
+
+body h3 {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+#main_container {
+  height: 80vh;
+  width: 80vw;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  scrollbar-color: red yellow;
+}
+
+#main_container #sent_box {
+  margin-bottom: 15px;
+}
+
+#message_container {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+#message_container::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+#message_container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#295161), to(skyblue));
+  background: linear-gradient(#295161, skyblue);
+  height: 40%;
+  background-color: #555;
+}
+
+.message {
+  background-color: #59bee6;
+  color: white;
+  font-size: 17px;
+  padding: 8px 5px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+  width: 28%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  word-break: break-all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  clear: both;
+}
+
+.left {
+  float: left;
+  clear: both;
+  left: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: left;
+}
+
+.right {
+  float: right;
+  clear: both;
+  margin-top: 20px;
+  right: 8px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 18px;
+  border-top-left-radius: 18px;
+  text-align: left;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.middle_j {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #95e995;
+  margin: 10px auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.middle_l {
+  margin: 10px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eea8a8;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.time {
+  color: grey;
+  position: absolute;
+  font-size: 11px;
+  bottom: 0px;
+  right: 10px;
+}
+
+#sent_box {
+  width: 50%;
+}
+
+#sent_box form {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  right: 10%;
+  margin-top: 5%;
+}
+
+#sent_box form input {
+  width: 80%;
+  height: 22px;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+#sent_box form button {
+  width: 20%;
+  background-color: #5fc4ec;
+  color: white;
+  border: 2px solid #197497;
+  border-radius: 6px;
+  font-size: 18px;
+}
+/*# sourceMappingURL=chat.css.map */
